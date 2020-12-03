@@ -18,7 +18,9 @@
   "homepage": "https://github.com/Sedki-Sghairi/bootstrap-project-1#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.5.1",
+    "popper": "^1.0.1",
     "popper.js": "^1.12.9"
   }
 }
