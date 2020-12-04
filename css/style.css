@@ -1,40 +1,122 @@
 body {
 	padding-top: 56px;
 }
-::before,
-::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+
 header {
 	background: linear-gradient(to left, rgb(196, 224, 196), rgb(129, 129, 129));
+	height: 532px;
+	width: 100%;
+	position: relative;
 }
+
 .header-img {
 	height: 532px;
 	width: 800px;
-	align-items: center;
 	overflow: hidden;
 	margin: 0 auto;
 	position: relative;
 }
+.image {
+	height: 100%;
+	width: 4000px;
+	display: flex;
+}
+@media only screen and (min-width: 800px) {
+	.image {
+		animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 10s forwards,
+			slideagain 1s ease-in-out 15s forwards, slidemore 1s ease-in-out 20s forwards;
+	}
+}
+.image-1 {
+	height: 532px;
+	width: 800px;
+	background: url('../images/image-1.jpg');
+	background-size: cover;
+}
+.image-2 {
+	height: 532px;
+	width: 800px;
+	background: url('../images/image-2.jpg');
+	background-size: cover;
+}
+.image-3 {
+	height: 532px;
+	width: 800px;
+	background: url('../images/image-3.jpg');
+	background-size: cover;
+}
+.image-4 {
+	height: 532px;
+	width: 800px;
+	background: url('../images/image-4.jpg');
+	background-size: cover;
+}
+.image-5 {
+	height: 532px;
+	width: 800px;
+	background: url('../images/image-5.jpg');
+	background-size: cover;
+}
+
+@media only screen and (max-width: 800px) {
+	.header-img {
+		width: 100%;
+	}
+	.image-1,
+	.image-2,
+	.image-3,
+	.image-4,
+	.image-5 {
+		height: 525px;
+		width: 100%;
+	}
+	.header-img {
+		height: 525px;
+		max-width: 350px;
+	}
+	.image {
+		height: 100%;
+		width: 1750px;
+		display: flex;
+		animation: slideme 1s ease-in-out 5s forwards, slidemeback 1s ease-in-out 10s forwards,
+			slidemeagain 1s ease-in-out 15s forwards, slidememore 1s ease-in-out 20s forwards;
+	}
+	.image-1 {
+		background: url('../images/one.jpg');
+	}
+	.image-2 {
+		background: url('../images/two.jpg');
+	}
+	.image-3 {
+		background: url('../images/three.jpg');
+	}
+	.image-4 {
+		background: url('../images/four.jpg');
+	}
+	.image-5 {
+		background: url('../images/five.jpg');
+	}
+}
 .banner {
+	max-width: 300px;
 	position: absolute;
 	top: 10%;
-	left: 50%;
+	left: 20%;
 	transform: translateX(-50%);
-	background: rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .4);
 	padding: 1rem;
+	border-radius: .5rem;
+}
+.banner a {
+	letter-spacing: .15rem;
 }
 .navbar {
 	background-color: #37474f;
 }
-.image {
-	width: 100%;
-	display: flex;
-	animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 10s forwards,
-		slideagain 1s ease-in-out 15s forwards, slidemore 1s ease-in-out 20s forwards;
+.navbar-nav .nav-item .nav-link {
+	color: rgb(253, 244, 227);
 }
+
 @keyframes slide {
 	0% {
 		transform: translateX(0%);
@@ -56,5 +138,29 @@ header {
 @keyframes slidemore {
 	100% {
 		transform: translateX(-3200px);
+	}
+}
+
+@keyframes slideme {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-350px);
+	}
+}
+@keyframes slidemeback {
+	100% {
+		transform: translateX(-700px);
+	}
+}
+@keyframes slidemeagain {
+	100% {
+		transform: translateX(-1050px);
+	}
+}
+@keyframes slidememore {
+	100% {
+		transform: translateX(-1400px);
 	}
 }
