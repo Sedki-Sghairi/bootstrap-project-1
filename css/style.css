@@ -1,4 +1,60 @@
+body {
+	padding-top: 56px;
+}
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 header {
-	border: red solid 2px;
-	max-height: 70vh;
+	background: linear-gradient(to left, rgb(196, 224, 196), rgb(129, 129, 129));
+}
+.header-img {
+	height: 532px;
+	width: 800px;
+	align-items: center;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.banner {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, .3);
+	padding: 1rem;
+}
+.navbar {
+	background-color: #37474f;
+}
+.image {
+	width: 100%;
+	display: flex;
+	animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 10s forwards,
+		slideagain 1s ease-in-out 15s forwards, slidemore 1s ease-in-out 20s forwards;
+}
+@keyframes slide {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-800px);
+	}
+}
+@keyframes slideback {
+	100% {
+		transform: translateX(-1600px);
+	}
+}
+@keyframes slideagain {
+	100% {
+		transform: translateX(-2400px);
+	}
+}
+@keyframes slidemore {
+	100% {
+		transform: translateX(-3200px);
+	}
 }
