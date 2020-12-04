@@ -21,6 +21,26 @@ header {
 	width: 4000px;
 	display: flex;
 }
+
+.banner {
+	max-width: 300px;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, .4);
+	padding: 1rem;
+	border-radius: .5rem;
+}
+.banner a {
+	letter-spacing: .15rem;
+}
+.navbar {
+	background-color: #37474f;
+}
+.navbar-nav .nav-item .nav-link {
+	color: rgb(253, 244, 227);
+}
 @media only screen and (min-width: 800px) {
 	.image {
 		animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 10s forwards,
@@ -96,27 +116,10 @@ header {
 	.image-5 {
 		background: url('../images/five.jpg');
 	}
+	.banner {
+		left: 25%;
+	}
 }
-.banner {
-	max-width: 300px;
-	position: absolute;
-	top: 10%;
-	left: 20%;
-	transform: translateX(-50%);
-	background: rgba(0, 0, 0, .4);
-	padding: 1rem;
-	border-radius: .5rem;
-}
-.banner a {
-	letter-spacing: .15rem;
-}
-.navbar {
-	background-color: #37474f;
-}
-.navbar-nav .nav-item .nav-link {
-	color: rgb(253, 244, 227);
-}
-
 @keyframes slide {
 	0% {
 		transform: translateX(0%);
