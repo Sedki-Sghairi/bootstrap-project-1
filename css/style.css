@@ -28,7 +28,7 @@ header {
 	top: 10%;
 	left: 20%;
 	transform: translateX(-50%);
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .5);
 	padding: 1rem;
 	border-radius: .5rem;
 }
@@ -40,6 +40,15 @@ header {
 }
 .navbar-nav .nav-item .nav-link {
 	color: rgb(253, 244, 227);
+}
+.banner-sm {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	width: 90%;
 }
 @media only screen and (min-width: 800px) {
 	.image {
@@ -77,7 +86,14 @@ header {
 	background: url('../images/image-5.jpg');
 	background-size: cover;
 }
-
+.login {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	color: #bf360c;
+	font-weight: 600;
+}
 @media only screen and (max-width: 800px) {
 	.header-img {
 		width: 100%;
