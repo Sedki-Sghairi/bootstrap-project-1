@@ -3,7 +3,7 @@ body {
 }
 
 header {
-	background: linear-gradient(to left, rgb(196, 224, 196), rgb(129, 129, 129));
+	background: linear-gradient(to top, rgba(70, 173, 66, .5), rgb(252, 255, 251));
 	height: 532px;
 	width: 100%;
 	position: relative;
@@ -49,11 +49,12 @@ header {
 	background: rgba(0, 0, 0, 0.5);
 	padding: 1rem;
 	width: 90%;
+	border-radius: .5rem;
 }
 @media only screen and (min-width: 800px) {
 	.image {
-		animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 10s forwards,
-			slideagain 1s ease-in-out 15s forwards, slidemore 1s ease-in-out 20s forwards;
+		animation: slide 1s ease-in-out 5s forwards, slideback 1s ease-in-out 12s forwards,
+			slideagain 1s ease-in-out 18s forwards, slidemore 1s ease-in-out 25s forwards;
 	}
 }
 .image-1 {
@@ -114,8 +115,8 @@ header {
 		height: 100%;
 		width: 1750px;
 		display: flex;
-		animation: slideme 1s ease-in-out 5s forwards, slidemeback 1s ease-in-out 10s forwards,
-			slidemeagain 1s ease-in-out 15s forwards, slidememore 1s ease-in-out 20s forwards;
+		animation: slideme 1s ease-in-out 6s forwards, slidemeback 1s ease-in-out 13s forwards,
+			slidemeagain 1s ease-in-out 19s forwards, slidememore 1s ease-in-out 25s forwards;
 	}
 	.image-1 {
 		background: url('../images/one.jpg');
