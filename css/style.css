@@ -12,7 +12,10 @@ btn-primary,
 .fa-bars {
 	transition: all .3s linear;
 }
-
+a,
+a:hover {
+	text-decoration: none;
+}
 header {
 	background: linear-gradient(to top, rgba(221, 193, 36, .5), rgba(255, 81, 47, .9));
 }
@@ -166,7 +169,14 @@ header {
 	}
 }
 /* Aboutus page */
+.team .nav-tabs {
+	border-bottom: none;
+}
+.grey {
+	color: #455a64;
+	font-family: 'Hind Madurai', sans-serif;
+}
 
-.team {
-	min-height: 50vh;
+.nav-pills .nav-link {
+	color: #222;
 }
