@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+@import url("https://fonts.googleapis.com/css?family=Sniglet");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+body {
+	overflow-x: hidden;
+}
 header,
 section {
 	overflow: hidden;
 }
 a,
-button,
+btn-primary,
 .fa-bars {
 	transition: all .3s linear;
 }
+
 header {
 	background: linear-gradient(to top, rgba(221, 193, 36, .5), rgba(255, 81, 47, .9));
 }
@@ -46,6 +51,119 @@ header {
 	margin-top: .25rem;
 	border: #385f6e solid 1px;
 	border-radius: .5rem;
+}
+.modal-header {
+	background-color: #4a678b;
+}
+.modal-title {
+	color: #fff;
+}
+.close {
+	color: floralwhite;
+}
+.modal-body {
+	background: linear-gradient(to top, rgb(250, 198, 84), rgb(247, 229, 191));
+}
+.fa-phone,
+.fa-envelope {
+	color: #f4d06f;
+}
+.yellowblue {
+	background: linear-gradient(to bottom, rgba(250, 198, 84, .5), #53a2be);
+}
+.bg-image {
+	background: rgba(0, 0, 0, .2);
+	bottom: 0;
+	padding-bottom: 0;
+	border-radius: .25rem;
+}
+
+.overlay {
+	border-top: 60px solid transparent;
+	border-left: 100rem solid rgba(250, 198, 84, .5);
+}
+
+/* app download */
+.ios {
+	text-align: center;
+}
+.footer {
+	background-color: #3c4f76;
+	color: floralwhite;
+}
+.follow-us {
+	color: #ffb79a;
+	font-family: "Sniglet", cursive;
+}
+.app {
+	background: rgba(252, 252, 152, .7);
+	border-radius: .5rem;
+	padding: 1rem 0;
+	margin: 1rem;
+	color: #d36135;
+	transition: all .3s linear;
+	cursor: pointer;
+}
+.app:hover {
+	background-color: #fff;
+}
+.fa-cloud-download {
+	color: #f8db8a;
+}
+.fa-android,
+.fa-apple {
+	color: #d36135;
+}
+.download {
+	padding: 3rem 0;
+	font-family: 'Hind Madurai', sans-serif;
+	background: linear-gradient(to top, #a8dadc, #53a2be);
+}
+.center-me {
+	margin: 0 auto;
+}
+/* reviews */
+.card {
+	max-width: 30rem;
+}
+.reviews {
+	font-family: cursive;
+	color: #635c6b;
+}
+.shakesecond,
+.shakefirst {
+	background: transparent;
+	color: rgb(1, 1, 199);
+	transition: all .3s linear;
+}
+.anime {
+	animation: shake .4s ease-in-out .5s 3 normal both;
+}
+.animetwo {
+	animation: shake .4s ease-in-out 2.5s 3 normal both;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 2px, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 2px);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-5px, 2px, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(5px, 0, 2px);
+	}
 }
 /* 
 
@@ -107,3 +225,310 @@ header .container .col-md-7 p {
 }
 
  */
+/* 
+.section-1 {
+	padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img {
+	opacity: 0.8;
+	width: 80%;
+	border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+	position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+	position: absolute;
+	top: 7vmin;
+	left: -18vmin;
+	background: white;
+	border-radius: 3px;
+	text-align: left;
+	padding: 13vmin 5vmin 20vmin 10vmin;
+	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+	font-family: "Rubik", cursive;
+	z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+	font-weight: bold;
+	padding: 0.4em 0;
+	font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.5);
+} */
+
+/*  Section 2  */
+
+/* .cover {
+	width: 100%;
+	height: 55vmin;
+	background: url("../assets/pexels-photo-452738.jpeg");
+	background-position: -24rem -19rem;
+	background-size: 150%;
+	position: relative;
+}
+
+.cover .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.cover .content {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+	font-family: "Patua One", cursive;
+	font-size: 6vmin;
+	color: whitesmoke;
+}
+
+.cover .content > p {
+	font-family: "Rubik", cursive;
+	font-size: 2vmin;
+	color: #e5e5e5;
+}
+
+.numbers .rect {
+	position: relative;
+	z-index: 1;
+	background: white;
+	width: 17rem;
+	height: 12rem;
+	padding-top: 3.5vmin;
+	margin: 1rem;
+	border-radius: 0.5em;
+	box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+	margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+	font-size: 5rem;
+	color: tomato;
+}
+
+.numbers .rect > p {
+	font-family: "Patua One", cursive;
+}
+
+.purchase > h1 {
+	padding-top: 15vmin;
+	padding-bottom: 0.1em;
+	font-family: "lobster", cursive;
+}
+
+.purchase > p {
+	color: #222;
+	font-size: 3vmin;
+	padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+	width: 22rem;
+	margin: 3vmin 3vmin;
+}
+
+.cards div {
+	padding: 0;
+	margin: 0;
+}
+
+.cards .title {
+	background: rgba(208, 241, 241, 0.199);
+	padding: 1.4em 2.5em;
+	font-size: 2vmin;
+}
+
+.card .card-text {
+	padding: 2.5rem 3rem;
+	color: #222;
+}
+
+.card-body .pricing {
+	background: rgba(208, 241, 241, 0.199);
+	border-top-right-radius: 170px;
+	border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+	font-size: 10vmin;
+	padding: 1em 0.5em;
+}
+
+/* Section 3 */
+/*  
+.section-3 {
+	height: 70vmin;
+	margin-top: 15vmin;
+	background: linear-gradient(to top, rgba(221, 193, 36, .5), rgba(255, 81, 47, .9));
+}
+
+.section-3 .col-md-12 > h1 {
+	padding: 2em 0 0.5em 0;
+	color: whitesmoke;
+	font-size: 6vmin;
+}
+
+.section-3 .col-md-12 > p {
+	padding: 0 4em;
+	padding-bottom: 2em;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 3vmin;
+}
+
+.section-3 .desktop {
+
+}
+
+.section-3 .desktop h3 {
+	font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+	font-size: 2vmin;
+} */
+
+/* Section Team */
+
+/* .section-4 .container h1 {
+	font-size: 6vmin;
+	padding-top: 14vmin;
+}
+
+.section-4 .team {
+	padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+	width: 22em;
+	margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+	padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+	font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+	padding-left: 3rem;
+}
+
+.border-radius {
+	border-radius: 340px;
+	width: 60%;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.815);
+	overflow-x: hidden;
+	padding: 14vmin 18vmin;
+}
+
+footer p > span {
+	color: #ff512f;
+}
+
+footer input {
+	border: none !important;
+}
+
+footer input::placeholder {
+	color: white !important;
+} */
+
+/* footer .input-group .input-group-text {
+	background: linear-gradient(to top, rgba(221, 193, 36, .5), rgba(255, 81, 47, .9));
+	border: none;
+}
+
+footer .column i {
+	color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+/*
+footer .column i + i {
+	padding: 0 0.5em;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.815);
+	z-index: 9999;
+	transition: all 1.5s ease;
+}
+
+@media only screen and (max-width: 768px) {
+	header .navbar-brand {
+		padding-left: 1rem;
+	}
+	.section-1 .row .col-md-6 .panel {
+		position: initial;
+		width: initial;
+		height: initial;
+	}
+	.section-2 .cover {
+		background-position: -25vmin -10vmin;
+	}
+	.numbers .rect {
+		width: 10rem;
+		height: 8rem;
+	}
+	.numbers .rect h1 {
+		font-size: 2rem;
+	}
+
+	.section-3 {
+		height: inherit;
+		padding: 10vmin !important;
+	}
+	.section-3 .row h1 {
+		padding: 6vmin 4vmin;
+	}
+
+	.section-3 .desktop i {
+		font-size: 8vmin;
+	}
+	.section-4 .carousel-item {
+		padding-left: 0.6rem;
+	}
+	footer .row .col-md-2 {
+		margin-top: 8vmin;
+	}
+} */
+
+/* screen size 375px */
+
+/* @media only screen and (max-width: 375px) {
+	.section-4 .card {
+		width: 18em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.section-4 .carousel-inner {
+		margin-left: -4vmin;
+	}
+} */
