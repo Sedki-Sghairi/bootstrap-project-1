@@ -180,3 +180,8 @@ header {
 .nav-pills .nav-link {
 	color: #222;
 }
+.history {
+	background-color: rgba(207, 216, 220, .4);
+	padding: 1rem;
+	border-radius: .25rem;
+}
