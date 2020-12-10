@@ -82,8 +82,8 @@ header {
 }
 
 .overlay {
-	border-top: 60px solid transparent;
-	border-left: 94vw solid rgba(250, 198, 84, .5);
+	border-top: 50px solid transparent;
+	border-left: 50vw solid rgba(250, 198, 84, .5);
 }
 
 /* app download */
@@ -221,7 +221,7 @@ main {
 	max-height: 38px;
 }
 #accordion {
-	min-height: 25rem;
+	min-height: 32rem;
 }
 
 .btn-term {
