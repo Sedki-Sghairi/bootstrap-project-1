@@ -186,15 +186,17 @@ header {
 	padding: 1rem;
 	border-radius: .25rem;
 }
+.pet-love {
+	width: 100px;
+}
 /* service page */
 .btn-link {
 	text-decoration: none;
-	color: darkgoldenrod;
+	color: #222;
 	letter-spacing: .15rem;
 	font-weight: 600;
 	transition: all .3s ease-in;
 }
-
 .btn-link:focus,
 .btn-link:hover,
 .btn-link:active {
@@ -203,6 +205,15 @@ header {
 }
 main {
 	width: 100%;
+	min-height: 60vh;
+	background: url(../images/matthew-henry-6x-hVXXiBxs-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+}
+@media only screen and (max-width: 827px) {
+	main {
+		background: rgba(0, 0, 0, .1);
+	}
 }
 .term {
 	min-width: 179px;
@@ -212,13 +223,13 @@ main {
 	min-height: 25rem;
 }
 .service-image {
-	width: 200px;
+	width: 100px;
 }
 .btn-term {
-	color: #d36135;
-	border: #d36135 solid 2px;
+	color: #fff;
+	background-color: #a74823;
 }
 .btn-term:hover {
 	color: #fff;
-	background-color: #d36135;
+	background-color: #77361c;
 }
