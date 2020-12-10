@@ -203,7 +203,6 @@ header {
 }
 main {
 	width: 100%;
-	/* min-height: 70vh; */
 }
 .term {
 	min-width: 179px;
@@ -213,5 +212,13 @@ main {
 	min-height: 25rem;
 }
 .service-image {
-	width: 100px;
+	width: 200px;
+}
+.btn-term {
+	color: #d36135;
+	border: #d36135 solid 2px;
+}
+.btn-term:hover {
+	color: #fff;
+	background-color: #d36135;
 }
