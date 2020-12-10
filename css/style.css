@@ -83,7 +83,7 @@ header {
 
 .overlay {
 	border-top: 60px solid transparent;
-	border-left: 100rem solid rgba(250, 198, 84, .5);
+	border-left: 94vw solid rgba(250, 198, 84, .5);
 }
 
 /* app download */
@@ -212,7 +212,8 @@ main {
 }
 @media only screen and (max-width: 827px) {
 	main {
-		background: rgba(0, 0, 0, .1);
+		background: url('../images/bg-sm.jpg');
+		background-size: cover;
 	}
 }
 .term {
@@ -222,9 +223,7 @@ main {
 #accordion {
 	min-height: 25rem;
 }
-.service-image {
-	width: 100px;
-}
+
 .btn-term {
 	color: #fff;
 	background-color: #a74823;
